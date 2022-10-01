@@ -1,0 +1,10 @@
+#Python code
+
+print("Learning Git")
+
+
+def commint():
+	print("Commit it")
+
+# This is a comment.
+''' This is also a comment. '''

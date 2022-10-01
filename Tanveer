@@ -1,0 +1,529 @@
+moham@DESKTOP-ESQS4TF MINGW32 /d/Git Practice (master)
+$ whoami]
+bash: whoami]: command not found
+
+moham@DESKTOP-ESQS4TF MINGW32 /d/Git Practice (master)
+$ whoami
+moham
+
+moham@DESKTOP-ESQS4TF MINGW32 /d/Git Practice (master)
+$ config user.email
+bash: config: command not found
+
+moham@DESKTOP-ESQS4TF MINGW32 /d/Git Practice (master)
+$ git config user.email
+mohammadtanveer7540@gmail.com
+
+moham@DESKTOP-ESQS4TF MINGW32 /d/Git Practice (master)
+$ git config
+usage: git config [<options>]
+
+Config file location
+    --global              use global config file
+    --system              use system config file
+    --local               use repository config file
+    --worktree            use per-worktree config file
+    -f, --file <file>     use given config file
+    --blob <blob-id>      read config from given blob object
+
+Action
+    --get                 get value: name [value-pattern]
+    --get-all             get all values: key [value-pattern]
+    --get-regexp          get values for regexp: name-regex [value-pattern]
+    --get-urlmatch        get value specific for the URL: section[.var] URL
+    --replace-all         replace all matching variables: name value [value-pattern]
+    --add                 add a new variable: name value
+    --unset               remove a variable: name [value-pattern]
+    --unset-all           remove all matches: name [value-pattern]
+    --rename-section      rename section: old-name new-name
+    --remove-section      remove a section: name
+    -l, --list            list all
+    --fixed-value         use string equality when comparing values to 'value-pattern'
+    -e, --edit            open an editor
+    --get-color           find the color configured: slot [default]
+    --get-colorbool       find the color setting: slot [stdout-is-tty]
+
+Type
+    -t, --type <type>     value is given this type
+    --bool                value is "true" or "false"
+    --int                 value is decimal number
+    --bool-or-int         value is --bool or --int
+    --bool-or-str         value is --bool or string
+    --path                value is a path (file or directory name)
+    --expiry-date         value is an expiry date
+
+Other
+    -z, --null            terminate values with NUL byte
+    --name-only           show variable names only
+    --includes            respect include directives on lookup
+    --show-origin         show origin of config (file, standard input, blob, command line)
+    --show-scope          show scope of config (worktree, local, global, system, command)
+    --default <value>     with --get, use default value when missing entry
+
+
+moham@DESKTOP-ESQS4TF MINGW32 /d/Git Practice (master)
+$ pwd
+/d/Git Practice
+
+moham@DESKTOP-ESQS4TF MINGW32 /d/Git Practice (master)
+$ ls
+ MyDirec/  'error - Copy (2).log'  'error - Copy (4).log'  'error - Copy.log'   first_renamed.txt
+ Tanveer   'error - Copy (3).log'  'error - Copy (5).log'   error.log           second.txt
+
+moham@DESKTOP-ESQS4TF MINGW32 /d/Git Practice (master)
+$ cat < first_renamed.txt
+#Python code
+
+print("Learning Git")
+
+
+def commint():
+        print("Commit it")
+
+# This is a comment.
+''' This is also a comment. '''
+moham@DESKTOP-ESQS4TF MINGW32 /d/Git Practice (master)
+$ cd MyDrec
+bash: cd: MyDrec: No such file or directory
+
+moham@DESKTOP-ESQS4TF MINGW32 /d/Git Practice (master)
+$ pwd
+/d/Git Practice
+
+moham@DESKTOP-ESQS4TF MINGW32 /d/Git Practice (master)
+$ cd MyDirec
+
+moham@DESKTOP-ESQS4TF MINGW32 /d/Git Practice/MyDirec (master)
+$ ls
+ First.txt   Static/  'error - Copy (5).log'  'error - Copy.log'   error.log
+
+moham@DESKTOP-ESQS4TF MINGW32 /d/Git Practice/MyDirec (master)
+$ cat < error.log
+jsdfg
+sdfkdfsg
+dsfksg
+dfshgsd
+gfsdgjfsdg
+fdsgjksdf
+gfjdskgsdf
+g
+
+
+
+
+
+
+
+
+Adding extra data.
+moham@DESKTOP-ESQS4TF MINGW32 /d/Git Practice/MyDirec (master)
+$ cd static
+
+moham@DESKTOP-ESQS4TF MINGW32 /d/Git Practice/MyDirec/static (master)
+$ ls
+'this is a text file.txt'
+
+moham@DESKTOP-ESQS4TF MINGW32 /d/Git Practice/MyDirec/static (master)
+$ cat < this is a text file.txt
+bash: this: No such file or directory
+
+moham@DESKTOP-ESQS4TF MINGW32 /d/Git Practice/MyDirec/static (master)
+$ ls
+'this is a text file.txt'
+
+moham@DESKTOP-ESQS4TF MINGW32 /d/Git Practice/MyDirec/static (master)
+$ cd ..
+
+moham@DESKTOP-ESQS4TF MINGW32 /d/Git Practice/MyDirec (master)
+$ ls
+ First.txt   Static/  'error - Copy (5).log'  'error - Copy.log'   error.log
+
+moham@DESKTOP-ESQS4TF MINGW32 /d/Git Practice/MyDirec (master)
+$ pwd
+/d/Git Practice/MyDirec
+
+moham@DESKTOP-ESQS4TF MINGW32 /d/Git Practice/MyDirec (master)
+$ cd ..
+
+moham@DESKTOP-ESQS4TF MINGW32 /d/Git Practice (master)
+$ pwd
+/d/Git Practice
+
+moham@DESKTOP-ESQS4TF MINGW32 /d/Git Practice (master)
+$ history
+    1  git
+    2   ls
+    3  mkdir project
+    4  ls
+    5  cd project
+    6  ls
+    7  ls
+    8  cd project
+    9   git clone git@github.com:callMeTanveer/Demo-repo.git
+   10  cd gemo-repo
+   11  git
+   12  git clone https://github.com/callMeTanveer/Demo-repo.git~
+   13  git clone https://github.com/callMeTanveer/Demo-repo.git
+   14  cd demo-repo
+   15  ls -la
+   16  ls
+   17  git status
+   18  git status
+   19  ls
+   20   git log
+   21  git log
+   22  git pull
+   23  git fetch
+   24  ld
+   25  ls
+   26  pwd
+   27  cd
+   28  ls
+   29  pwd
+   30  cd Fidelity International
+   31  cd Downloads
+   32  ls
+   33  git config --global user.name "callMeTanveer"
+   34  git config --global user.email "mohammadtanveer7540@gmail.com"
+   35  git config --list
+   36  ls
+   37  git config user.name
+   38  git config user.email
+   39  ls
+   40  cd Documents
+   41  pwd
+   42  ls
+   43  cd Sonali
+   44  ls
+   45  cat <INTRODUCTION.pdf>
+   46  cat<My_PAN.pdf>
+   47  ls
+   48  cd My_PAN.pdf
+   49  cd -
+   50  cd -
+   51  cd --
+   52  pwd
+   53  ls
+   54  git config
+   55  git config user.name
+   56  cd MINGW32
+   57  CD
+   58  cd
+   59  git status
+   60  git init
+   61  git status
+   62  git --a
+   63  git add --a
+   64  git status
+   65  git status
+   66  git add --a
+   67  git status
+   68  git commit -m "initial commit"
+   69  git status
+   70  git log
+   71  git status
+   72  git status
+   73  git add first.txt
+   74  git add First.txt
+   75  git status
+   76  git status
+   77  git add --a
+   78  git status
+   79  git status
+   80  git commit -m "Changed first.txt and added better design."
+   81  giy status
+   82  git status
+   83  git add --a
+   84  git status
+   85  git commit -m "This is modified text 2"
+   86  git status
+   87  git lo9g
+   88  git log
+   89  ls
+   90  pwd
+   91  cd Practice
+   92  git log
+   93  rm -rf .git
+   94  git status
+   95  git clone
+   96  git clone https://github.com/tensorflow/tensorflow.git
+   97  git clone https://github.com/callMeTanveer/Demo-repo.git
+   98  ls
+   99  pwd
+  100  git clone https://github.com/vk001716/docker_cuda_tutorial.git
+  101  pwd
+  102  cd Git Practice
+  103  cd D
+  104  git config user.name
+  105  giy config user.email
+  106  git config user.email
+  107  git status
+  108  git init
+  109  git clone
+  110  git clone https://github.com/vk001716/docker_cuda_tutorial.git
+  111  ls
+  112  cd docker_cuda_tutorial
+  113  ls
+  114  cd app
+  115  ls
+  116  cd
+  117  ls
+  118  cd d
+  119  cd My Computer
+  120  cd my
+  121   pwd
+  122  ls
+  123  cd docker_cuda_tutorial
+  124  ls
+  125  git status
+  126  giy add --a
+  127  git add --a
+  128  git status
+  129  git commit "minute change"
+  130  git commit "changed readme"
+  131  git commit -m "minute change"
+  132  git status
+  133  ls
+  134  git status
+  135  ls
+  136  cd docker_cuda_tutorial
+  137  ls
+  138  git status
+  139  pwd
+  140  cd -
+  141  pwd
+  142  git clone https://github.com/tanveer-hussain/Baby-behavior-monitoring-IoT.git
+  143  ls
+  144  cd Baby-behaviour-monitoring-IoT
+  145  cd Baby-behavior-monitoring-IoT
+  146  ls
+  147  cd -
+  148  ls
+  149  git log
+  150  git log
+  151  ls
+  152  cd Baby-behavior-monitoring-IoT
+  153  ls
+  154  git log
+  155  cd -
+  156  ls
+  157  git status
+  158  git init
+  159  git status
+  160  git add --a
+  161  ls
+  162  git status
+  163  git log
+  164  git status
+  165  git add --a
+  166  git status
+  167  ls
+  168  git status
+  169  git add first.txt
+  170  git status
+  171  git add first.txt
+  172  git status
+  173  ls
+  174  git add <First.txt>
+  175  git add First.txt
+  176  git status
+  177  ls
+  178  git commit -m "watching 6th lecture of CodeWithHarry"
+  179  git log
+  180  git status
+  181  pwd
+  182  ls
+  183  git status
+  184  git add --a
+  185  git status
+  186  git commit "Commited"
+  187  git commit -m "Commited"
+  188  git status
+  189  touch error.log
+  190  ls
+  191  git status
+  192  touch .gitignore
+  193  git status
+  194  git status
+  195  git add --a
+  196  git status
+  197  git commit -m "Added gitignore"
+  198  git status
+  199  git log
+  200  git status
+  201  git status
+  202  git status
+  203  git status
+  204  git status
+  205  git status
+  206  ls
+  207  git status
+  208  git status
+  209  git add --a
+  210  git status
+  211  git status
+  212  ]ls
+  213  ls
+  214  git status
+  215  git status
+  216  git status
+  217  ls
+  218  cd MyDirec
+  219  ls
+  220  cd -
+  221  pwd
+  222  git status
+  223  git add --a
+  224  git status
+  225  git diff
+  226  who
+  227  whoami
+  228  who
+  229  pwd
+  230  pls
+  231  ls
+  232  cd MyDirec
+  233  pwd
+  234  ls
+  235  cd ..
+  236  pwd
+  237  clear
+  238  pwd
+  239  clear
+  240  ca
+  241  cal
+  242  cat > Tanveer
+  243  ls
+  244  cat < First.txt
+  245  cat -n First.txt
+  246  cat -b First.txt
+  247  cat >> Tanveer
+  248  cat < Tanveer
+  249  ls
+  250  cat < 5010XXXXXX5929_2c481286_10Aug2022_TO_09Sep2022_113504838.pdf
+  251  clear
+  252  file *
+  253  stat Tanveer
+  254  ls -F
+  255  s
+  256  ]ls
+  257  ls
+  258  cat > Tanveer
+  259  cat <<Tanveer
+  260  q
+  261  git status
+  262  git add .
+  263  git status
+  264  git commit -m "This is a good commit"
+  265  git status
+  266  git status
+  267  git status
+  268  git commit -a -m "Direct commit"
+  269  git status
+  270  git add second (2).txt
+  271  git add second(2).txt
+  272  git status
+  273  git add second.txt
+  274  git status
+  275   git status
+  276  git add second2.txt
+  277  git status
+  278  git commit -a -m "All committed"
+  279  git status
+  280  git log
+  281  history
+  282  clear
+  283  history
+  284  git clone https://github.com/Anshuk123/devops-practical-challenge.git
+  285  ls
+  286  cd devops-practical-challenge
+  287  ls
+  288  cat < 200
+  289  cat < 200 code
+  290  cat < 200 code
+  291  cd ansible-workspace
+  292  ls
+  293  cat < hots
+  294  cat < hosts
+  295  ls
+  296  cat playbook.yml
+  297  q
+  298  git log
+  299  q
+  300   git status
+  301  cd -
+  302  cd ..
+  303  git status
+  304  git status
+  305  git add --a
+  306  git status
+  307  git commit -m "Renamed the second file to the third file"
+  308  git rm -i third.txt
+  309  git rm third.txt
+  310  ls
+  311  git status
+  312  git commit -m "Removed third file"
+  313  git status
+  314  ls
+  315  git status
+  316  git ls
+  317  ls
+  318    git mv first.txt renamed_first.txt
+  319  ls
+  320  git mv first.txt renamed_first.txt
+  321  git status
+  322  git status
+  323  git status
+  324  ls
+  325  git status
+  326  history
+  327  git history
+  328  mv FIRST.txt first.txt
+  329  ls
+  330  mv first.txt FiRsT.txt
+  331  ls
+  332  git status
+  333  mv FiRsT.txt first_renamed.txt
+  334  ls
+  335  git status
+  336  git add --a
+  337  git status
+  338  git commit -m "Renamed first file "
+  339  git status
+  340  ls -la
+  341  hlep
+  342  help
+  343  pwd
+  344  ls
+  345  clear
+  346  whoami]
+  347  whoami
+  348  config user.email
+  349  git config user.email
+  350  git config
+  351  pwd
+  352  ls
+  353  cat < first_renamed.txt
+  354  cd MyDrec
+  355  pwd
+  356  cd MyDirec
+  357  ls
+  358  cat < error.log
+  359  cd static
+  360  ls
+  361  cat < this is a text file.txt
+  362  ls
+  363  cd ..
+  364  ls
+  365  pwd
+  366  cd ..
+  367  pwd
+  368  history
+
+moham@DESKTOP-ESQS4TF MINGW32 /d/Git Practice (master)
+$
+
+
+
+
+Adding some extra data.
